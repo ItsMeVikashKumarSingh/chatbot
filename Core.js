@@ -4980,7 +4980,7 @@ default:
     if(isCmd){
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
-        reply (`Sorry`)
+        reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
 
     }	 			
 

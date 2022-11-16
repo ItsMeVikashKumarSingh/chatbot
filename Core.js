@@ -698,7 +698,7 @@ if (db.users[m.sender].afkTime > -1) {
 let user = global.db.users[m.sender]
 reply(`
 Pls try not to tag him!
-He's Offline ${user.afkReason ? ' after ' + user.afkReason : ''}
+She's Offline ${user.afkReason ? ' after ' + user.afkReason : ''}
 During ${clockString(new Date - user.afkTime)}
 `.trim())
 user.afkTime = -1
@@ -1403,7 +1403,7 @@ return list[Math.floor(list.length * Math.random())]
     }      
 
 switch(command) {
-	
+	/*
     case 'sc': case 'script': case 'sourcecode': {
         if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
@@ -1427,12 +1427,12 @@ switch(command) {
     sourceUrl: "https://wallpapercave.com/wp/wp10524580.jpg"
     }}*/
 
-    }
-    Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
-    }
-    break
+    // }
+    // Miku.sendMessage(m.chat, buttonMessage, { quoted: m })
+    // }
+    // break
 
-
+/*
 case 'me': case 'profile': case 'p':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
@@ -1472,7 +1472,7 @@ let buttonspro = [
         Miku.sendMessage(m.chat,buttonMessage,{quoted:m})
         	
             break
-
+*/
 
 case 'banchat': case 'bangroup':{
 if (isBan) return reply(mess.banned)	 			
@@ -1502,7 +1502,7 @@ replay('This Group has been *unbanned* from using me!')
   }
   }
   break
-
+/*
 case 'support': case 'supportgc':
     
     reply(`*My developer's group:* http://gg.gg/MikuSupport`)
@@ -1512,21 +1512,21 @@ case 'repo': case 'botrepo':
     
     reply(`*My Source Code:* https://github.com/FantoX001/Miku-MD`)
     break
-
+*/
 case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` *━━━〈  📛 NSFW Menu 📛  〉━━━*\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
+        reply(` *━━━〈  📛 NSFW Menu 📛  〉━━━*\n\nhentaivideo\n, blowjobgif\n, hneko\n, masturbation\n, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
-
+/*
 case 'reaction': case 'react': case 'reactions': case 'r':
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
             reply(` *━━━〈  📍 Reactions 📍  〉━━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
         break   
-    
-
+ */   
+/*
 case 'limituser': case 'userlimit': case 'limit':
             if (isBan) return reply(mess.banned)	 			
             if (isBanChat) return reply(mess.bangc)
@@ -1539,7 +1539,8 @@ case 'limituser': case 'userlimit': case 'limit':
               }
              break
     
-
+*/
+/*
 
 
 case 'ringtone': {
@@ -1676,7 +1677,8 @@ let sections = []
 })
 }
   break
-
+*/
+/*
 
   case 'grupsetting':
     case 'groupsetting':{
@@ -1729,6 +1731,7 @@ case 'animesearchxxx': case 'anime':{
     }
     break
 */
+/*
 
 case 'coffee': case 'kopi': {
         if (isBan) return reply(mess.banned)	 			
@@ -1761,7 +1764,8 @@ await fs.unlinkSync(encmedia)
 }
 }
 break
-
+*/
+/*
 case 'getcase':
    if (isBan) return reply(mess.banned)	 			
 if (isBanChat) return reply(mess.bangc)
@@ -1784,7 +1788,7 @@ await Miku.sendMessage(from, {text:"reply -s to this image to make sticker"}, {q
 })
 }
 break
-
+*/
 /*
 case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
@@ -1796,7 +1800,7 @@ case 'delete': case 'del': {
  }
  break
 */
-
+/*
  case 'deleteall': case 'delall': case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -1847,7 +1851,7 @@ await Miku.sendMessage(m.chat, { delete: key })
  Miku.sendTextWithMentions(m.chat, teks, m)
  }
  break
-
+*/
  case 'afk': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -1858,7 +1862,7 @@ await Miku.sendMessage(m.chat, { delete: key })
  }
  break
 
-
+/*
  case 'fliptext': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -2228,7 +2232,7 @@ await Miku.sendMessage(m.chat, { delete: key })
    }
    }
    break
-
+*/
 
    case 'nsfw': {
     if (isBan) return reply(mess.banned)	 			
@@ -2326,7 +2330,7 @@ replay("Error")
 }
 }
 break
-
+/*
 
 case 'happymod': {
     if (isBan) return reply(mess.banned)	 			
@@ -2424,6 +2428,7 @@ if (isBanChat) return reply(mess.bangc)
  }
  break
 
+ */
  case 'tag': case 'tagall': case 'all':{
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -2468,7 +2473,7 @@ if (isBanChat) return reply(mess.bangc)
      break
 
 */
-
+/*
 case 'purge':{mess
     if (isBan) return reply(mess.banned)	 			
      if (isBanChat) return reply(mess.bangc)
@@ -2484,7 +2489,7 @@ let mentioned = participants.map(v => v.jid)
 
     break
 
-
+*/
 
 
     case 'nowa':  case 'stalk': case 'stalknumber':{
@@ -2551,7 +2556,7 @@ let mentioned = participants.map(v => v.jid)
 
 
 
-
+/*
 
 
  case 'grouplink': case 'gclink': {
@@ -2656,7 +2661,7 @@ let mentioned = participants.map(v => v.jid)
      await Miku.groupParticipantsUpdate(m.chat, [users], 'remove')
      }
      break
-
+*/
 
      case 'join': {
         if (isBan) return reply(mess.banned)	 			
@@ -2694,6 +2699,7 @@ let mentioned = participants.map(v => v.jid)
      }
      break
 
+    /*
   
      case 'volume': {
         if (isBan) return reply(mess.banned)	 			
@@ -2799,7 +2805,7 @@ reply(`\`\`\`「 _Calculator Tool_ 」\`\`\`\n\n*Input :* ${qsd}\n*Calculation R
 }
 }
 break
-
+*/
 case 'public': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
@@ -2820,6 +2826,7 @@ case 'public': {
  }
  break
 
+ /*
 
 case 'toimage': case 'toimg': {
    if (isBan) return reply(mess.banned)	 			
@@ -2918,7 +2925,7 @@ case 'togif': case 'getgif':{
     Miku.sendContact(m.chat, global.Owner, m)
     }
     break
-
+*/
 case 'translate': case 'trans': {
     if (isBan) return reply(mess.banned)
     if (!args.join(" ")) return replay("Pls enter any text to translate")
@@ -2928,7 +2935,7 @@ case 'translate': case 'trans': {
     replay(`Input : ${Detek}\nTranslation Results : ${Infoo}`)
     }
     break
-
+/*
 
 case 'gimage': case 'gig': case 'googleimage':{
    if (isBan) return reply(mess.banned)	 			
@@ -3502,7 +3509,7 @@ reply(`Send Image/Video With Caption ${prefix + command}\nVideo Duration 1-9 sec
 }
 break
 
-
+*/
 
 
 case 'smeme': case 'stickermeme': case 'stickmeme': {
@@ -3520,7 +3527,6 @@ memek = await Miku.sendImageAsSticker(m.chat, meme, m, { packname: global.packna
 await fs.unlinkSync(memek)
 }
 break
-
 case 'sgif': case 'sticker': case 's': {
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
@@ -3539,6 +3545,7 @@ case 'sgif': case 'sticker': case 's': {
  }
  break
 
+ /*
 case 'wiki':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
@@ -3839,8 +3846,8 @@ case 'truth':
                            Miku.sendMessage(from, { image: buffer, caption: '*You have chosen Truth*\n'+ mikutruthww }, {quoted:m})
                            break
 
-
-
+*/
+/*
 case 'nsfwmiku':
     if (isBan) return reply(mess.banned)
     if (isBanChat) return reply(mess.bangc)
@@ -3866,7 +3873,7 @@ reply(`${result4}`)
 Miku.sendMessage(m.chat, { document : { url : baby1[0].link}, fileName : baby1[0].nama, mimetype: baby1[0].mime }, { quoted : m }).catch ((err) => reply(mess.error))
 }
 break
-
+*/
 case 'masturbation': case 'jahy': case 'hentai': case 'glasses': case 'gangbang': case 'foot': 
 case 'femdom': case 'cum': case 'ero': case 'cuckold': case 'blowjob': case 'bdsm': 
 case 'ahegao': case 'ass': case 'orgy': case 'panties': case 'pussy': case 'thighs': case 'yuri': case 'tentacles':
@@ -4139,7 +4146,7 @@ reply(mess.waiting)
                 })               
                 break
 
-
+/*
 
 case 'feed':
 case 'meow':
@@ -4423,7 +4430,7 @@ break
 
 */
 
-
+/*
 
 
 case 'megumin':
@@ -4832,7 +4839,7 @@ qr, say, translate, fliptext, toletter, weather
             Miku.sendMessage(m.chat, buttonMessage,{ quoted:m })
                 }
 break
- 
+*/ 
 
 case '':
     if(isCmd){
@@ -4858,7 +4865,7 @@ case '':
                 }
 break
 
-
+/*
 
 case 'miku':
     if (isBan) return reply(mess.banned)	 			
@@ -4906,7 +4913,8 @@ const mikuarray= [
             Miku.sendMessage(from,{video:{url:mikuselection},gifPlayback:true,caption:txt},{quoted:m})
 
 break
-
+*/
+/*
 case 'add':{     			
     if (!m.isGroup) return replay(mess.grouponly)
  if (!isBotAdmins) return replay(mess.botadmin)
@@ -4965,7 +4973,7 @@ case 'add':{
 
         break
 
-
+*/
 
 default:
 

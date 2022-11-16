@@ -689,7 +689,7 @@ if (!afkTime || afkTime < 0) continue
 let reason = user.afkReason || ''
 reply(`
 Pls try not to tag him!
-He's in away from keyboard ${reason ? 'with reason ' + reason : 'no reason'}
+She's in away from keyboard ${reason ? 'with reason ' + reason : 'no reason'}
 During ${clockString(new Date - afkTime)}
 `.trim())
 }

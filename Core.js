@@ -689,7 +689,7 @@ if (!afkTime || afkTime < 0) continue
 let reason = user.afkReason || ''
 reply(`
 Pls try not to tag him!
-She's in away from keyboard ${reason ? 'with reason ' + reason : 'no reason'}
+He's in away from keyboard ${reason ? 'with reason ' + reason : 'no reason'}
 During ${clockString(new Date - afkTime)}
 `.trim())
 }
@@ -4976,14 +4976,14 @@ case 'add':{
 */
 
 default:
-/*
+
     if(isCmd){
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
         reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
 
     }	 			
-*/
+
 
 if (budy.startsWith('=>')) {
 if (!isCreator) return reply(mess.botowner)

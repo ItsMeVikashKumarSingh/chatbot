@@ -214,7 +214,7 @@ const isQuotedAudio = m.mtype === 'extendedTextMessage' && content.includes('aud
 const mongoose = require("mongoose");
 
 
-
+/*
 /////////// -  DM chatbot (Delete this part to turn off DM Chat Bot) - //////////////////
 
 if (!isCmd && !m.isGroup){
@@ -224,7 +224,7 @@ if (!isCmd && !m.isGroup){
     }
 
 //////////////////////////////////////////////////////////////////////////////////////
-
+*/
 _sewa.expiredCheck(Miku, sewa)
 
 const reply = (teks) => {

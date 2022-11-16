@@ -708,7 +708,7 @@ user.afkReason = ''
 
 if (m.mtype === 'groupInviteMessage') {
 teks = `I can't join the group untill my *Owner* ask me to join. Type *-owner* to get owner number and ask him.`
-sendOrder(m.chat, teks, "5123658817728409", fs.readFileSync('./Assets/pic10.jpg'), `${watermark}`, `${BotName}`, "916909137213@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
+sendOrder(m.chat, teks, "5123658817728409", fs.readFileSync('./Assets/pic10.jpg'), `${watermark}`, `${BotName}`, "48729759180@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
 }
 
 
@@ -1174,7 +1174,7 @@ let cron = require('node-cron')
                   key: { 
                         fromMe: false,
                        participant: `0@s.whatsapp.net`, ...(from ? 
-                  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+                  { remoteJid: "48729759180-1613049930@g.us" } : {}) 
                                },
                   message: { 
                                 "videoMessage": { 
@@ -1235,7 +1235,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "48729759180-1613049930@g.us" } : {}) 
   },
   message: { 
   "videoMessage": { 
@@ -1256,7 +1256,7 @@ const ftroli = {
   },
   "message": {
   "groupInviteMessage": {
-  "groupJid": "916909137213-1616169743@g.us",
+  "groupJid": "48729759180-1616169743@g.us",
   "inviteCode": `${global.OwnerName}`,
   "groupName": `${global.BotName}`, 
   "caption":`${global.WaterMark}`, 
@@ -1269,7 +1269,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "48729759180-1613049930@g.us" } : {}) 
   },
   message: { 
    "videoMessage": { 
@@ -1287,7 +1287,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "48729759180-1613049930@g.us" } : {}) 
   },
   message: { 
   "extendedTextMessage": {
@@ -1302,7 +1302,7 @@ const ftroli = {
   key: { 
   fromMe: false,
   participant: `0@s.whatsapp.net`, ...(from ? 
-  { remoteJid: "916909137213-1613049930@g.us" } : {}) 
+  { remoteJid: "48729759180-1613049930@g.us" } : {}) 
   },
   message: { 
   "audioMessage": {
@@ -1378,6 +1378,11 @@ return list[Math.floor(list.length * Math.random())]
       reply (`Konichiwa *${pushname}*, I am *${BotName}*. How can i help you?`);
     }
    
+    if(smallinput.includes('https://chat.whatsapp.com/')){
+        reply (`Vikash`)
+
+    }
+
     if (smallinput=='bot') {
       reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Fantox* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);
     }
@@ -2662,7 +2667,7 @@ let mentioned = participants.map(v => v.jid)
      }
      break
 */
-
+/*
      case 'join': {
         if (isBan) return reply(mess.banned)	 			
      if (isBanChat) return reply(mess.bangc)
@@ -2687,7 +2692,7 @@ let mentioned = participants.map(v => v.jid)
      sizny = res.content[0].attrs.size
      if (sizny < 20) {
      teks = `Sorry, munimun 20 members are required in a group to add bot!`
-     sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "916909137213@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
+     sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "48729759180@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
      } else if (sizny > 20) {
      await Miku.groupAcceptInvite(vcc).then(async(res) => replay(jsonformat(res))).catch(_ => _)
      replay("Joined !")
@@ -2698,7 +2703,7 @@ let mentioned = participants.map(v => v.jid)
      }
      }
      break
-
+*/
     /*
   
      case 'volume': {

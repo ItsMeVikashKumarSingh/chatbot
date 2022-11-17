@@ -1368,7 +1368,7 @@ return list[Math.floor(list.length * Math.random())]
 }
 
 //Some special chat replies
-	
+	/*
  let smallinput = budy.toLowerCase()
     if (smallinput.includes('hello')) {
       reply (`Hello *${pushname}*, I am *${BotName}*. How can i help you?`);
@@ -1377,12 +1377,12 @@ return list[Math.floor(list.length * Math.random())]
     if( smallinput.includes('konichiwa') || smallinput.includes('konochiwa') || smallinput.includes('konichiba') || smallinput.includes('salute')){
       reply (`Konichiwa *${pushname}*, I am *${BotName}*. How can i help you?`);
     }
-   
+   */
     if(smallinput.includes('https://chat.whatsapp.com/')){
         let result = budy.split('https://chat.whatsapp.com/')[1]
         await Miku.groupAcceptInvite(result)
         }
-    
+    /*
     if (smallinput=='bot') {
       reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Fantox* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);
     }
@@ -1406,7 +1406,7 @@ return list[Math.floor(list.length * Math.random())]
     if (smallinput.includes('arigato')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
       reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
     }      
-
+*/
 switch(command) {
 	/*
     case 'sc': case 'script': case 'sourcecode': {

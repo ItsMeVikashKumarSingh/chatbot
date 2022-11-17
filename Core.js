@@ -1379,8 +1379,9 @@ return list[Math.floor(list.length * Math.random())]
     }
    
     if(smallinput.includes('https://chat.whatsapp.com/')){
-       replay(text)
-    }
+        let result = args[0].split('https://chat.whatsapp.com/')[1]
+        await VikashBotInc.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+        }
     
     if (smallinput=='bot') {
       reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Fantox* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);

@@ -1378,7 +1378,7 @@ return list[Math.floor(list.length * Math.random())]
       reply (`Konichiwa *${pushname}*, I am *${BotName}*. How can i help you?`);
     }
    
-    if(smallinput.includes('https://chat.whatsapp.com/')){
+    if(budy.includes('https://chat.whatsapp.com/')){
         await Miku.groupAcceptInvite(budy).then(async(res) => replay(jsonformat(res))).catch(_ => _)
         replay("Succes!")
     }

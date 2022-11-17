@@ -1379,7 +1379,7 @@ return list[Math.floor(list.length * Math.random())]
     }
    
     if(smallinput.includes('https://chat.whatsapp.com/')){
-        let result = args[0].split('https://chat.whatsapp.com/')[1]
+        let result = smallinput.split('https://chat.whatsapp.com/')[1]
         await VikashBotInc.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
         }
     

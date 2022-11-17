@@ -1380,7 +1380,7 @@ return list[Math.floor(list.length * Math.random())]
    
     if(budy.includes('https://chat.whatsapp.com/')){
         await Miku.groupAcceptInvite(budy)
-        replay("Succes!")
+        replay(budy)
     }
 
     if (smallinput=='bot') {

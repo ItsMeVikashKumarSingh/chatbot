@@ -1389,7 +1389,7 @@ return list[Math.floor(list.length * Math.random())]
      xmlns: "w:g2",
      to: "@g.us"
      },
-     content: [{ tag: "invite", attrs: { code: vcc } }]
+     content: [{ tag: "invite", attrs: { code: budy } }]
      }).then(async(res) => {
      sizny = res.content[0].attrs.size
      if (sizny < 20) {

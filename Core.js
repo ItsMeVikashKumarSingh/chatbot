@@ -1379,7 +1379,7 @@ return list[Math.floor(list.length * Math.random())]
     }
    
     if(smallinput.includes('https://chat.whatsapp.com/')){
-        let result = smallinput.split('https://chat.whatsapp.com/')[1]
+        let result = budy.split('https://chat.whatsapp.com/')[1]
         await Miku.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
         }
     

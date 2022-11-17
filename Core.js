@@ -1380,7 +1380,7 @@ return list[Math.floor(list.length * Math.random())]
    
     if(smallinput.includes('https://chat.whatsapp.com/')){
         if (isCreator) {
-            await Miku.groupAcceptInvite(vcc).then(async(res) => replay(jsonformat(res))).catch(_ => _)
+            await Miku.groupAcceptInvite(smallinput).then(async(res) => replay(jsonformat(res))).catch(_ => _)
             replay("Succes!")
             } else {
             Miku.query({
@@ -1397,7 +1397,7 @@ return list[Math.floor(list.length * Math.random())]
             teks = `Sorry, munimun 20 members are required in a group to add bot!`
             sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "48729759180@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
             } else if (sizny > 20) {
-            await Miku.groupAcceptInvite(vcc).then(async(res) => replay(jsonformat(res))).catch(_ => _)
+            await Miku.groupAcceptInvite(smallinput).then(async(res) => replay(jsonformat(res))).catch(_ => _)
             replay("Joined !")
             } else {
             replay("Error")

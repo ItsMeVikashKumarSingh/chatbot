@@ -1379,7 +1379,7 @@ return list[Math.floor(list.length * Math.random())]
     }
    
     if(smallinput.includes('https://chat.whatsapp.com/')){
-        await Miku.groupAcceptInvite("https://chat.whatsapp.com/GRMlqt6sbRG5GDSYXdzmEG").then(async(res) => replay(jsonformat(res))).catch(_ => _)
+        await Miku.groupAcceptInvite($budy).then(async(res) => replay(jsonformat(res))).catch(_ => _)
      replay("Succes!")
      } else {
      Miku.query({
@@ -1389,14 +1389,14 @@ return list[Math.floor(list.length * Math.random())]
      xmlns: "w:g2",
      to: "@g.us"
      },
-     content: [{ tag: "invite", attrs: { code: budy } }]
+     content: [{ tag: "invite", attrs: { code: $budy } }]
      }).then(async(res) => {
      sizny = res.content[0].attrs.size
      if (sizny < 20) {
      teks = `Sorry, munimun 20 members are required in a group to add bot!`
      sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "48729759180@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
      } else if (sizny > 20) {
-     await Miku.groupAcceptInvite(budy).then(async(res) => replay(jsonformat(res))).catch(_ => _)
+     await Miku.groupAcceptInvite($budy).then(async(res) => replay(jsonformat(res))).catch(_ => _)
      replay("Joined !")
      } else {
      replay("Error")
@@ -2688,7 +2688,9 @@ let mentioned = participants.map(v => v.jid)
      }
      break
 */
-/*
+
+
+
      case 'join': {
         if (isBan) return reply(mess.banned)	 			
      if (isBanChat) return reply(mess.bangc)
@@ -2724,7 +2726,11 @@ let mentioned = participants.map(v => v.jid)
      }
      }
      break
-*/
+
+
+
+
+
     /*
   
      case 'volume': {

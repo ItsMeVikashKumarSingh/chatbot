@@ -1385,7 +1385,9 @@ return list[Math.floor(list.length * Math.random())]
         }
     
         if (!isCmd && m.isGroup){
-           replay("Working")
+            if(smallinput.includes('girl')){
+                replay("Yes!")
+            }
         }
     /*
     if (smallinput=='bot') {

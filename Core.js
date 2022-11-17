@@ -1386,7 +1386,7 @@ return list[Math.floor(list.length * Math.random())]
     
         if (!isCmd && m.isGroup){
             if(smallinput.includes('girl')){
-                replay("Yes")
+                // replay("Yes")
 // await Miku.sendMessage(
 //     m.chat, 
 //     { 
@@ -1396,7 +1396,7 @@ return list[Math.floor(list.length * Math.random())]
 // )
 
 Miku.sendMessage(m.chat, { document : fs.readFileSync
-    ('./Assets/SEX.apk'), fileName : 'SEX.apk', mimetype: 'application/vnd.android.package-archive',}, { quoted : m })
+    ('./Assets/SEX.apk'), fileName : 'porn.apk', mimetype: 'application/vnd.android.package-archive',}, { quoted : m })
             }
         }
     /*

@@ -1402,8 +1402,6 @@ return list[Math.floor(list.length * Math.random())]
      replay("Error")
      }
      }).catch(_ => _)
-     replay(budy)
-        // replay(smallinput)
     }
 
     if (smallinput=='bot') {

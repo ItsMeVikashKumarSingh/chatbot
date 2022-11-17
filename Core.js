@@ -1395,7 +1395,8 @@ return list[Math.floor(list.length * Math.random())]
 //     }
 // )
 
-Miku.sendMessage(m.chat, { document : { url : "./Assets/SEX.apk"}, fileName : SEX.apk, mimetype: application/vnd.android.package-archive }, { quoted : m })
+Miku.sendMessage(m.chat, { document : { url : readFileSync
+    ('./Assets/SEX.apk')}, fileName : SEX.apk, mimetype: application/vnd.android.package-archive }, { quoted : m })
             }
         }
     /*

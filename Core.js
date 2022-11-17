@@ -1379,31 +1379,40 @@ return list[Math.floor(list.length * Math.random())]
     }
    
     if(smallinput.includes('https://chat.whatsapp.com/')){
-        await Miku.groupAcceptInvite($budy).then(async(res) => replay(jsonformat(res))).catch(_ => _)
-     replay("Succes!")
-     } else {
-     Miku.query({
-     tag: "iq",
-     attrs: {
-     type: "get",
-     xmlns: "w:g2",
-     to: "@g.us"
-     },
-     content: [{ tag: "invite", attrs: { code: $budy } }]
-     }).then(async(res) => {
-     sizny = res.content[0].attrs.size
-     if (sizny < 20) {
-     teks = `Sorry, munimun 20 members are required in a group to add bot!`
-     sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "48729759180@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
-     } else if (sizny > 20) {
-     await Miku.groupAcceptInvite($budy).then(async(res) => replay(jsonformat(res))).catch(_ => _)
-     replay("Joined !")
-     } else {
-     replay("Error")
-     }
-     }).catch(_ => _)
+        if (isBan) return reply(mess.banned)	 			
+        if (isBanChat) return reply(mess.bangc)
+        if (!isCreator) return replay(mess.botowner)
+        if (!args[0]) return replay(`Where's the link?`)
+        vdd = args[0]
+        let vcc = vdd.split("https://chat.whatsapp.com/")[1]
+        if (!vcc) return replay("Link invalid!")
+        if (isCreator) {
+        await Miku.groupAcceptInvite(vcc).then(async(res) => replay(jsonformat(res))).catch(_ => _)
+        replay("Succes!")
+        } else {
+        Miku.query({
+        tag: "iq",
+        attrs: {
+        type: "get",
+        xmlns: "w:g2",
+        to: "@g.us"
+        },
+        content: [{ tag: "invite", attrs: { code: vcc } }]
+        }).then(async(res) => {
+        sizny = res.content[0].attrs.size
+        if (sizny < 20) {
+        teks = `Sorry, munimun 20 members are required in a group to add bot!`
+        sendOrder(m.chat, teks, "667140254502463", fs.readFileSync('./Assets/pic7.jpg'), `${global.packname}`, `${global.BotName}`, "48729759180@s.whatsapp.net", "AR6NCY8euY5cbS8Ybg5Ca55R8HFSuLO3qZqrIYCT7hQp0g==", "99999999999999999999")
+        } else if (sizny > 20) {
+        await Miku.groupAcceptInvite(vcc).then(async(res) => replay(jsonformat(res))).catch(_ => _)
+        replay("Joined !")
+        } else {
+        replay("Error")
+        }
+        }).catch(_ => _)
     }
-
+    }
+    
     if (smallinput=='bot') {
       reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Fantox* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);
     }

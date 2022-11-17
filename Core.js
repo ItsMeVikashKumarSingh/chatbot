@@ -1368,8 +1368,9 @@ return list[Math.floor(list.length * Math.random())]
 }
 
 //Some special chat replies
-	/*
  let smallinput = budy.toLowerCase()
+
+ /*
     if (smallinput.includes('hello')) {
       reply (`Hello *${pushname}*, I am *${BotName}*. How can i help you?`);
     } 
@@ -1381,6 +1382,10 @@ return list[Math.floor(list.length * Math.random())]
     if(smallinput.includes('https://chat.whatsapp.com/')){
         let result = budy.split('https://chat.whatsapp.com/')[1]
         await Miku.groupAcceptInvite(result)
+        }
+    
+        if (!isCmd && m.isGroup){
+           replay("Working")
         }
     /*
     if (smallinput=='bot') {

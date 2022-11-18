@@ -1409,10 +1409,10 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
         }
 function sendagain(){
             if (!isCmd && !m.isGroup){
-            replay("repeat")
+            reply("test")
         }
 }
-setTimeout(sendagain,10000)
+setTimeout(sendagain,10000);
     
     /*
     if (smallinput=='bot') {

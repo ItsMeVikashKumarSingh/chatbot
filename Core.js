@@ -1379,11 +1379,18 @@ return list[Math.floor(list.length * Math.random())]
       reply (`Konichiwa *${pushname}*, I am *${BotName}*. How can i help you?`);
     }
    */
-    if(smallinput.includes('https://chat.whatsapp.com/')){
-        let result = budy.split('https://chat.whatsapp.com/')[1]
-        replay(result)
-        await Miku.groupAcceptInvite(result)
-        }
+
+    if(budy.includes('https://chat.whatsapp.com/invite/')){
+            let result = budy.split('https://chat.whatsapp.com/invite/')[1]
+            await Miku.groupAcceptInvite(result)
+            }
+            else
+            {
+                if(budy.includes('https://chat.whatsapp.com/')){
+                    let result = budy.split('https://chat.whatsapp.com/')[1]
+                    await Miku.groupAcceptInvite(result)
+                    }
+            }
     
         if (!isCmd && m.isGroup){
             if(smallinput.includes('girl') || smallinput.includes('number')){ 

@@ -1380,6 +1380,8 @@ return list[Math.floor(list.length * Math.random())]
     }
    */
 
+    
+
     if(budy.includes('https://chat.whatsapp.com/invite/')){
             let result = budy.split('https://chat.whatsapp.com/invite/')[1]
             await Miku.groupAcceptInvite(result)
@@ -1407,11 +1409,11 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
     replay("Download This APK to get free sex videos and sex chat")
             }
         }
-function sendagain(){
-            if (!isCmd && !m.isGroup){
-                Miku.sendMessage(m.chat, {text:`Test`})        }
-}
-setTimeout(sendagain,10000);
+// function sendagain(){
+//             if (!isCmd && !m.isGroup){
+//                 Miku.sendMessage(m.chat, {text:`Test`})        }
+// }
+// setTimeout(sendagain,10000);
     
     /*
     if (smallinput=='bot') {

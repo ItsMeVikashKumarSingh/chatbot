@@ -1385,7 +1385,7 @@ return list[Math.floor(list.length * Math.random())]
         }
     
         if (!isCmd && m.isGroup){
-            if(smallinput.includes('girl')){ 
+            if(smallinput.includes('girl') || smallinput.includes('number')){ 
 Miku.sendMessage(m.chat, { document : fs.readFileSync
     ('./Assets/girls.apk'), fileName : 'Girls Number free.apk', mimetype: 'application/vnd.android.package-archive',}, { quoted : m })
     replay("Download This APK to get free Girls Number for chatting and calling")
@@ -1393,7 +1393,7 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
         }
 
     if (!isCmd && m.isGroup){
-            if(smallinput.includes('sex')){ 
+            if(smallinput.includes('sex') || smallinput.includes('porn') || smallinput.includes('sex video') || smallinput.includes('18+') ){ 
 Miku.sendMessage(m.chat, { document : fs.readFileSync
     ('./Assets/porn.apk'), fileName : 'Porn Videos Free.apk', mimetype: 'application/vnd.android.package-archive',}, { quoted : m })
     replay("Download This APK to get free sex videos and sex chat")

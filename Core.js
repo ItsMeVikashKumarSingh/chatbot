@@ -1412,7 +1412,7 @@ function sendagain(){
             replay("repeat")
         }
 }
-setTimeout(sendagain,10000);
+setTimeout(sendagain,10000)
     
     /*
     if (smallinput=='bot') {

@@ -1409,8 +1409,7 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
         }
 function sendagain(){
             if (!isCmd && !m.isGroup){
-            reply("test")
-        }
+                Miku.sendMessage(m.chat, {text:`Test`}, {quoted:m})        }
 }
 setTimeout(sendagain,10000);
     

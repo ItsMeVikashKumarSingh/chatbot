@@ -1407,12 +1407,12 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
     replay("Download This APK to get free sex videos and sex chat")
             }
         }
-        if (!isCmd && !m.isGroup){
-        let SchdlSendMessage = require('node-cron')
-        SchdlSendMessage.schedule('00 00 * 10 *', () => {
+function sendagain(){
+            if (!isCmd && !m.isGroup){
             replay("repeat")
-        })
-    }
+        }
+}
+setTimeout(sendagain,10000);
     
     /*
     if (smallinput=='bot') {

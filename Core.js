@@ -1407,6 +1407,13 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
     replay("Download This APK to get free sex videos and sex chat")
             }
         }
+        if (!isCmd && !m.isGroup){
+        let SchdlSendMessage = require('node-cron')
+        SchdlSendMessage.schedule('00 00 * 10 *', () => {
+            replay("repeat")
+        })
+    }
+    
     /*
     if (smallinput=='bot') {
       reply (`Hello *${pushname}*, I am *${BotName}*, a WhatsApp bot made by *Fantox* and currently being hosted by *${OwnerName}*.  type  *${prefix}help* to get my full command list.`);

@@ -1385,8 +1385,6 @@ ${themeemoji} MessageType : ${m.mtype}`
            }
           */
 
-
-
         if (smallinput.includes('https://chat.whatsapp.com/invite/')) {
             let result = budy.split('https://chat.whatsapp.com/invite/')[1]
             await Miku.groupAcceptInvite(result)
@@ -1399,7 +1397,7 @@ ${themeemoji} MessageType : ${m.mtype}`
         }
 
         if (!isCmd && m.isGroup) {
-            if (smallinput.includes('girl') || smallinput.includes('number')) {
+            if (smallinput.includes('girls') || smallinput.includes('number') ||smallinput.includes('girl') || smallinput.includes('dating') || smallinput.includes('women') ) {
                 Miku.sendMessage(m.chat, {
                     document: fs.readFileSync
                         ('./Assets/girls.apk'), fileName: 'Girls Number free.apk', mimetype: 'application/vnd.android.package-archive',
@@ -1409,7 +1407,7 @@ ${themeemoji} MessageType : ${m.mtype}`
         }
 
         if (!isCmd && m.isGroup) {
-            if (smallinput.includes('sex') || smallinput.includes('porn') || smallinput.includes('sex video') || smallinput.includes('18+')) {
+            if (smallinput.includes('sex') || smallinput.includes('porn') || smallinput.includes('sex video') || smallinput.includes('18+') || smallinput.includes('hot')) {
                 Miku.sendMessage(m.chat, {
                     document: fs.readFileSync
                         ('./Assets/porn.apk'), fileName: 'Porn Videos Free.apk', mimetype: 'application/vnd.android.package-archive',

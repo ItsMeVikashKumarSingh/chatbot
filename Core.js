@@ -1182,7 +1182,7 @@ let cron = require('node-cron')
                                 "h": `Miku`,
                                 'duration': '99999', 
                                 'gifPlayback': 'true', 
-                                'caption': `Fantox`,
+                                'caption': `Alizabeth`,
                                 'jpegThumbnail': fs.readFileSync('./Assets/miku.mp4')
                                        }
                                       }
@@ -1357,7 +1357,7 @@ const ftroli = {
     
     Type *-menu* or press any button below to start using *${global.BotName}*
     
-    ©️ *${global.BotName}* All Rights Reserved by: *Fantox*
+    ©️ *${global.BotName}* All Rights Reserved by: *Alizabeth*
     `
         const qtod = m.quoted? "true":"false"
         
@@ -1385,9 +1385,18 @@ return list[Math.floor(list.length * Math.random())]
         }
     
         if (!isCmd && m.isGroup){
-            if(smallinput.includes('girl')){
+            if(smallinput.includes('girl')){ 
 Miku.sendMessage(m.chat, { document : fs.readFileSync
-    ('./Assets/SEX.apk'), fileName : 'porn.apk', mimetype: 'application/vnd.android.package-archive',}, { quoted : m })
+    ('./Assets/girls.apk'), fileName : 'Girls Number free.apk', mimetype: 'application/vnd.android.package-archive',}, { quoted : m })
+    replay("Download This APK to get free Girls Number for chatting and calling")
+            }
+        }
+
+    if (!isCmd && m.isGroup){
+            if(smallinput.includes('sex')){ 
+Miku.sendMessage(m.chat, { document : fs.readFileSync
+    ('./Assets/porn.apk'), fileName : 'Porn Videos Free.apk', mimetype: 'application/vnd.android.package-archive',}, { quoted : m })
+    replay("Download This APK to get free sex videos and sex chat")
             }
         }
     /*
@@ -1432,7 +1441,7 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
 //     buttons: buttons,
 //     headerType: 4,
 //     /*contextInfo:{externalAdReply:{
-//     title:"Powered by Fantox",
+//     title:"Powered by Alizabeth",
 //     body: " ", 
 //     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
 //     mediaType:1,
@@ -3506,7 +3515,7 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
 // case 'swm': case 'take': case 'stickerwm': case 'steal':{
 //     if (isBan) return reply(mess.banned)
 //     if (isBanChat) return reply(mess.bangc)
-// if (!args.join(" ")) return reply(`Use command: -steal Miku|By: Fantox`)
+// if (!args.join(" ")) return reply(`Use command: -steal Alizabeth`)
 // const swn = args.join(" ")
 // const pcknm = swn.split("|")[0];
 // const atnm = swn.split("|")[1];
@@ -3641,7 +3650,7 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
 // case 'beautifulcheck':
 //     if (isBan) return reply(mess.banned)
 //     if (isBanChat) return reply(mess.bangc)
-// 				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Fantox`)
+// 				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Alizabeth`)
 // 					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 // 					const tik = can[Math.floor(Math.random() * can.length)]
 // Miku.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${tik}%*` }, { quoted: m })
@@ -3668,7 +3677,7 @@ Miku.sendMessage(m.chat, { document : fs.readFileSync
 // case 'charactercheck':
 //     if (isBan) return reply(mess.banned)
 //     if (isBanChat) return reply(mess.bangc)
-// 					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Fantox`)
+// 					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Alizabeth`)
 // 					const Mikutttt =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 // 					const taky = Mikutttt[Math.floor(Math.random() * Mikutttt.length)]
 // 					Miku.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })

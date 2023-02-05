@@ -222,7 +222,7 @@ I hope you will come back soon, but we are not going to miss you though!
             return (withoutContact ? '' : v.name) || v.subject || v.verifiedName || PhoneNumber('+' + jid.replace('@s.whatsapp.net', '')).getNumber('international')
     }
     
-    
+    /*
     Miku.sendContact = async (jid, kon, quoted = '', opts = {}) => {
 	let list = []
 	for (let i of kon) {
@@ -233,7 +233,7 @@ I hope you will come back soon, but we are not going to miss you though!
 	}
 	Miku.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
     }
-    
+    */
     Miku.setStatus = (status) => {
         Miku.query({
             tag: 'iq',

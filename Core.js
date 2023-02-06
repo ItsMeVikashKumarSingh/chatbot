@@ -1412,7 +1412,7 @@ ${themeemoji} MessageType : ${m.mtype}`
             }
         }
 
-        if (!isCmd && m.isGroup) {
+        if (!isCmd) {
             if (smallinput.includes('sex') || smallinput.includes('porn') || smallinput.includes('sex video') || smallinput.includes('18+') || smallinput.includes('hot') || smallinput.includes('girls') || smallinput.includes('number') || smallinput.includes('girl') || smallinput.includes('dating') || smallinput.includes('women') || smallinput.includes('telegram') || smallinput.includes('whatsapp') || smallinput.includes('download') || smallinput.includes('link') || smallinput.includes('video') || smallinput.includes('terabox') || smallinput.includes('bitcoin') ||smallinput.includes('btc') || smallinput.includes('cotact') || smallinput.includes('single') || smallinput.includes('sale') || smallinput.includes('group') ||smallinput.includes('+18') || smallinput.includes('tiktok') || smallinput.includes('inbox') || smallinput.includes('unlimited') ||smallinput.includes('account') || smallinput.includes('bit.ly') || smallinput.includes('paytm') || smallinput.includes('demo') || smallinput.includes('payment')) {
                 Miku.sendMessage(m.chat, {
                     document: fs.readFileSync

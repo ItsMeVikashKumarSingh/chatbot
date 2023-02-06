@@ -1,1 +1,1 @@
-gunicorn app:app & python3 npm i -g forever && forever index.js
+gunicorn app:app & npm i -g forever && forever index.js

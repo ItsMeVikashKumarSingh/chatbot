@@ -44,7 +44,7 @@ store.bind(Miku.ev)
     Miku.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
-    let pa7rick = await Miku.sendContact(callerId, global.owner)
+    let pa7rick = await Miku.sendContact(callerId, global.Owner)
     Miku.sendMessage(callerId, { text: `You will be blocked automatically for calling me!`}, { quoted : pa7rick })
     await sleep(8000)
     await Miku.updateBlockStatus(callerId, "block")

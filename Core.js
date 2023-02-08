@@ -1452,8 +1452,8 @@ ${themeemoji} MessageType : ${m.mtype}`
           reply (`Mention not *${pushname}* 😇. I am a bot afterall.`);
         }      
     */
-        // switch(command) {
-        // 	/*
+        switch(command) {
+        	/*
         //     case 'sc': case 'script': case 'sourcecode': {
         //         if (isBan) return reply(mess.banned)	 			
         //     if (isBanChat) return reply(mess.bangc)
@@ -4763,32 +4763,32 @@ ${themeemoji} MessageType : ${m.mtype}`
         //                 break
 
 
-        // case 'bc': case 'broadcast': case 'bcall': {
-        //     if (isBan) return reply(mess.banned)	 			
-        //     if (isBanChat) return reply(mess.bangc)
-        // if (!isCreator) return replay(mess.botowner)
-        // if (!args.join(" ")) return replay(`Please enter some text to broadcast! \n\nExample : ${prefix + command} ${global.OwnerName}`)
-        // let anu = await store.chats.all().map(v => v.id)
-        // replay(`Send Broadcast To ${anu.length} Chat\nTime's up ${anu.length * 1.5} second`)
-        // for (let yoi of anu) {
-        // await sleep(1500)
-        // let btn = [{
-        // quickReplyButton: {
-        // displayText: '✨Menu✨',
-        // id: '-menu'
-        // }  
-        // }, {
-        // quickReplyButton: {
-        // displayText: 'Bot Owner',
-        // id: '-owner'
-        // }
-        // }]
-        // let txt = `「 *${global.OwnerName}'s Broadcast* 」\n\n${text}`
-        // Miku.send5ButImg(yoi, txt, `${global.BotName}`, BotLogo, btn, Thumb)
-        // }
-        // replay('Broadcast Sent !')
-        // }
-        // break    
+        case 'broadcast':  {
+            if (isBan) return reply(mess.banned)	 			
+            if (isBanChat) return reply(mess.bangc)
+        if (!isCreator) return replay(mess.botowner)
+        if (!args.join(" ")) return replay(`Please enter some text to broadcast! \n\nExample : ${prefix + command} ${global.OwnerName}`)
+        let anu = await store.chats.all().map(v => v.id)
+        replay(`Send Broadcast To ${anu.length} Chat\nTime's up ${anu.length * 1.5} second`)
+        for (let yoi of anu) {
+        await sleep(1500)
+        let btn = [{
+        quickReplyButton: {
+        displayText: '✨Menu✨',
+        id: '-menu'
+        }  
+        }, {
+        quickReplyButton: {
+        displayText: 'Bot Owner',
+        id: '-owner'
+        }
+        }]
+        let txt = `「 *${global.OwnerName}'s Broadcast* 」\n\n${text}`
+        Miku.send5ButImg(yoi, txt, `${global.BotName}`, BotLogo, btn, Thumb)
+        }
+        replay('Broadcast Sent !')
+        }
+        break    
 
 
         // case 'help': case 'h': case 'menu': case 'allmenu': case 'listmenu':{
@@ -5031,14 +5031,14 @@ ${themeemoji} MessageType : ${m.mtype}`
 
         // */
 
-        // default:
+        default:
 
-        //     if(isCmd){
-        //         if (isBan) return reply(mess.banned)	 			
-        //         if (isBanChat) return reply(mess.bangc)
-        //         reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
+            if(isCmd){
+                if (isBan) return reply(mess.banned)	 			
+                if (isBanChat) return reply(mess.bangc)
+                reply (`No such command programmed *${pushname}* senpai! Type *${prefix}help* to get my full command list!`)
 
-        //     }	 			
+            }	 			
         /*
         */
 
